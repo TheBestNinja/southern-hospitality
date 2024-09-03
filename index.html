@@ -8,17 +8,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
         .logo {
-            width: 50vh;
+            width: 20vw;
+            min-width: 190px;
             float: left;
+
         }
 
         .number {
             float: right;
-            font-size: 5vh;
+            margin-top: 1vw;
         }
 
         header{
-            height: 10vh;
+            height: 12vh;
             padding-left: 10vw;
             padding-right: 10vw;
             background-color: #fcf5d7;
@@ -39,6 +41,7 @@
             color: #fcf5d7;
             padding: 10vw;
             padding-top: 50vh;
+            font-weight: bold;
         }
 
         #container{
@@ -62,20 +65,26 @@
             border-radius: 5%;
         }
         footer{
-            height: 10vh;
+            height: 20vh;
             padding-left: 10vw;
             padding-right: 10vw;
             background-color: #fcf5d7; 
+            padding-top: 2vw;
         }
         .listelment{
             padding: 1vw;
             font-size: large;
         }
+        .contact{
+            float: right;
+            
+        }
+       
     </style>
 </head>
 <header><img class="logo" src="./assets/Southern.png" alt=""><h2 class="number">(615)476-5646</h2></header>
 <body>
-    <div id="heroimg" class="w-100"><h1 id="herotext">Compassionate In-Home Care</h1></div>
+    <div id="heroimg" class="w-100"> <b><h1 id="herotext">Compassionate In-Home Care</h1></b></div>
     <div id="container">
         <div id="list" class="w-50">
             <div class="listelment">
@@ -95,5 +104,5 @@
     </div>
 </body>
 <br>
-<footer class="w-100"><img class="logo" src="./assets/Southern.png" alt=""> <h2 class="number">(615)476-5646</h2></footer>
+<footer class="w-100"> <div class="contact"> <h4 >(615)476-5646</h4><h4>Lee.Smith@SoutherHospitalityHomeCare.org</h4></div> <img class="logo" src="./assets/Southern.png" alt=""></footer>
 </html>
