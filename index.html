@@ -8,7 +8,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
 
-        
+        *{
+            color: #3C5677;
+        }
 
         .logo {
             width: 20vw;
@@ -27,61 +29,7 @@
             padding-right: 10vw;
             background-color: #fcf5d7;
         }
-        body{
-            background-color:#7b5104;
-            
-        }
 
-        #heroimg{
-            background: url("./assets/v2osk-1Z2niiBPg5A-unsplash.jpg");
-            height: 70vh;
-            background-repeat: no-repeat;
-        background-size: cover, contain;
-
-        }
-        #herotext{
-            color: #fcf5d7;
-            padding: 10vw;
-            padding-top: 50vh;
-            font-weight: bold;
-        }
-
-        #container{
-            height: 100vh;
-            width: 80vw;
-            margin: auto;
-            padding-top: 5vh;
-            
-        }
-
-        #list{
-            float: left;
-            color: #fcf5d7;
-        }
-        span{
-            font-size: x-large;
-        }
-        #secondimg{ 
-            float: right;
-            
-            border-radius: 5%;
-        }
-        footer{
-            height: 20vh;
-            padding-left: 10vw;
-            padding-right: 10vw;
-            background-color: #fcf5d7; 
-            padding-top: 2vw;
-        }
-        .listelment{
-            padding: 1vw;
-            font-size: large;
-        }
-        .contact{
-            float: right;
-            
-        }
-        
 
         @media only screen and (max-width: 500px) {
          .logo {
@@ -116,6 +64,41 @@
         }
 
         }
+
+            body {
+      margin-left: 10vw;
+      margin-right: 10vw;
+      background-color: #F2EBE3;
+    }
+    .section-light {
+      background-color: #F5CF86;
+    }
+    .section-dark {
+      background-color: #EFBC47;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    #bar{
+      background-color: #3C5677;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .img-slider {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #F5CF86;
+      color: #fff;
+      padding: 20px 0;
+    }
+    img{
+        padding-bottom: 2vw;
+    }
        
     </style>
 </head>
@@ -124,23 +107,83 @@
     <h2 class="number text-center">(615)476-5646</h2>
 </header>
 <body>
-    <div id="heroimg" class="w-100"> <b><h1 id="herotext">Compassionate In-Home Care</h1></b></div>
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets\v2osk-1Z2niiBPg5A-unsplash.jpg" class="d-block w-100" alt="Tiny House">
+      </div>
+      <div class="carousel-item">
+        <img src="assets\sumaid-pal-singh-bakshi-KrXjuivLU-k-unsplash.jpg" class="d-block w-100" alt="Tiny Home">
+      </div>
+
+    </div>
+  </div>
+
     <div id="container">
-        <div id="list" class="w-50">
-            <div class="listelment">
-                <span>Personalized Attention</span>
-                <p>Individualized care assistance for your loved one at home.</p>
-            </div>
-            <div class="listelment">
-                <span>Compassionate Caregivers</span>
-                <p>In-home support provided with kindness and empathy.</p>
-            </div>
-            <div class="listelment">
-                <span>Peace of Mind</span>
-                <p>Reassurance that your loved one is safe and well cared for at home.</p>
-            </div>
+        <section class="section section-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Compassionate In-Home Care</h2>
+      <p>We are a groups of caregivers who are on a  mission to keep loved ones together and have a passion for helping seniors stay in there homes.</p>
+      <p>Home Grown Caregivers servicing rural middle Tennessee </p>
+      <ul>
+        <li><strong>Personalized Attention:</strong> Individualized care assistance for your loved one at home.</li>
+        <li><strong>Compassionate Caregivers:</strong> In-home support provided with kindness and empathy</li>
+        <li><strong>Peace of Mind:</strong>Reassurance that your loved one is safe and well cared for at home.</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Serving Local Remote Communities with Heart -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <!-- Image Slider -->
+          <div id="pawPawCarousel" class="carousel slide" data-bs-ride="carousel">
+                <img src="https://images.unsplash.com/photo-1574097880168-21606735d77b?q=80&w=2087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Paw Paw's Portable Palace">
+          </div>
         </div>
-        <img id="secondimg"class="w-50" src="./assets/cdc-F98Mv9O6LfI-unsplash.jpg" alt="">
+        <div class="col-md-6">
+          <h3>Serving Local Remote Communities with Heart</h3>
+          <p>At Southern Hospitality Home Care, we proudly go where others don’t. Our mission is to bring compassionate, reliable care to families in rural middle, TN —places that are often overlooked or underserved by out of state chains. Whether it’s a winding churt road or a quiet holler, we show up with the same dedication and warmth you'd expect from a neighbor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caregivers from the Community, for the Community -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <!-- Image Slider -->
+          <div id="highHopesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <img src="https://images.unsplash.com/photo-1690574467268-e77dcaefb77c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="High Hopes">
+        </div>
+        <div class="col-md-6">
+          <h3> Caregivers from the Community, for the Community</h3>
+          <p>We don’t just assign caregivers—we carefully choose people who live nearby and understand the local way of life. These are folks who share your values, speak your language, and respect your culture. That familiarity creates a genuine bond that feels less like a service and more like family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Customization Options -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center mb-5">Customization Options</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <!-- Image Slider -->
+          <div id="bathOptionsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <img src="https://images.unsplash.com/photo-1657817590968-bf5ba173a6d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Bathroom Options">
+        </div>
+        <div class="col-md-6">
+          <h4>We Care for Our Caregivers—So They Can Truly Care for You</h4>
+          <p>We believe the best care starts with mutual respect. That’s why we treat our caregivers with the same dignity and compassion we give to our clients. When caregivers feel supported, empowered, and appreciated, they’re able to provide care that’s heartfelt, consistent, and truly exceptional. It’s a ripple effect of goodness—starting with us, reaching all the way to your home.</p>
+        </div>
+      </div>
+    </section>
+
     </div>
 </body>
 <br>
